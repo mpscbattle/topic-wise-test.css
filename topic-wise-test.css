@@ -1,0 +1,109 @@
+/* सामान्य बॉडी और फॉन्ट स्टाइल */
+        
+/* 💡 बॉडी स्ट्रेच फिक्स के लिए: */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* बैकग्राउंड कलर जोड़ा */
+}
+
+/* मुख्य कंटेनर जो सूची को रखता है */
+.subject-list-container {
+    width: 100%;
+    max-width: 100%; /* अधिकतम चौड़ाई सेट करें */
+    margin: 0 auto;
+    background-color: white;
+    padding: 8px;
+    border-radius: 0px;
+}
+
+/* 'विषय' हेडिंग */
+.main-heading {
+    color: #6a0dad; /* बैंगनी जैसा रंग */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #6a0dad;
+    padding-bottom: 5px;
+}
+
+/* सूची में प्रत्येक विषय की पंक्ति */
+.subject-item {
+    display: flex;
+    justify-content: space-between; /* विषय और बटन को अलग-अलग कोनों पर धकेलें */
+    align-items: center; /* तत्वों को लंबवत केंद्र में रखें */
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* अंतिम आइटम के लिए बॉर्डर हटा दें */
+.subject-item:last-child {
+    border-bottom: none;
+}
+
+/* विषय का नाम कंटेनर */
+.subject-details {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1; /* उपलब्ध जगह का उपयोग करें */
+    margin-right: 15px;
+    /* विषय के टेक्स्ट को छोटा होने दें ताकि बटन के लिए जगह बने */
+    flex-shrink: 1; 
+    /* विषय के टेक्स्ट को overflow होने पर ellipsis दिखाएँ, यदि आवश्यक हो */
+    min-width: 0; 
+}
+
+/* विषय का टेक्स्ट */
+.subject-text {
+    line-height: 1.4;
+}
+
+/* मुख्य विषय का नाम */
+.subject-name {
+    font-size: 17px;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+/* ब्रैकेट में उप-विषय/विवरण (जैसे: (बीजगणित)) */
+.sub-details {
+    font-size: 16px;
+    color: #007bff; /* नीला लिंक रंग */
+    font-weight: normal;
+    display: block;
+    /* sub-details को subject-name के साथ inline रखने के लिए */
+    display: inline;
+    font-weight: normal;
+}
+
+/* मॉक टेस्ट बटन */
+.mock-test-button {
+    background-color: #007bff; /* नीला रंग */
+    color: white ! important;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    text-decoration: none; 
+    
+    /* फिक्स: बटन को छोटा होने से रोकता है और टेक्स्ट को रैप नहीं होने देता */
+    flex-shrink: 0; 
+    white-space: nowrap; 
+}
+
+.mock-test-button:hover {
+    background-color: #0056b3;
+}
+
+/* प्ले आइकॉन (▶) */
+.play-icon {
+    font-size: 14px;
+    margin-right: 5px;
+}
