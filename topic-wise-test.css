@@ -57,7 +57,7 @@ html, body {
 
 /* मुख्य विषय का नाम */
 .subject-name {
-    font-size: 16px;
+    font-size: 17px;
     color: #333;
     font-weight: bold;
     display: block;
@@ -65,7 +65,7 @@ html, body {
 
 /* ब्रैकेट में उप-विषय/विवरण (जैसे: आधुनिक भारताचा इतिहास...) */
 .sub-details {
-    font-size: 14px;
+    font-size: 16px;
     color: #007bff; /* नीला लिंक रंग */
     font-weight: normal;
     display: block;
